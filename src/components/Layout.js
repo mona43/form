@@ -51,10 +51,9 @@ const BackgroundElements = () => {
         Your browser does not support the video tag.
       </video>
       
-      {/* طبقة التعتيم */}
+
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
       
-      {/* عناصر زخرفية متحركة */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-20 w-64 h-64 bg-[var(--primary-color)]/20 rounded-full mix-blend-overlay filter blur-3xl animate-blob"></div>
         <div className="absolute top-40 right-20 w-72 h-72 bg-[var(--secondary-color)]/20 rounded-full mix-blend-overlay filter blur-3xl animate-blob animation-delay-2000"></div>
