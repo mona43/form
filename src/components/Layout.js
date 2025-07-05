@@ -18,7 +18,7 @@ const WhatsAppButton = () => {
 
   return (
     <a
-      href="https://wa.me/yourphonenumber" // استبدل "yourphonenumber" برقم هاتفك
+      href="https://wa.me/+966563793970" // استبدل "yourphonenumber" برقم هاتفك
       className={`fixed bottom-6 right-6 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-white p-5 rounded-full shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 z-50 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       target="_blank"
       rel="noopener noreferrer"

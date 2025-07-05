@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 const Footer = () => {
   const [visible, setVisible] = useState(false);
@@ -18,7 +17,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <Link href="/about" className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">من نحن</Link>
+            <h3 className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</h3>
             <p className="text-sm text-gray-300 mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
           </div>
           

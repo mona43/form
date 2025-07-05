@@ -35,10 +35,13 @@ export default function Form() {
         const response = await fetch("https://ipapi.co/json/");
         const data = await response.json();
         if (data.country_name) {
+          const location = [data.country_name, data.region, data.city].filter(Boolean).join(', ');
           setFormData(prev => ({
             ...prev,
-            country: data.country_name
+            country: location
+            
           }));
+          console.log('Country:', data.country_name);
         }
         if (data.country_code) {
           setCountryCode(data.country_code);
