@@ -13,8 +13,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: "نموذج التسجيل",
-  description: "نموذج تسجيل بسيط باستخدام Next.js",
+  title: "الأسهم المالية",
 };
 
 export default function RootLayout({ children }) {
