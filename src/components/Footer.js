@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
@@ -17,7 +18,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</h3>
+            <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
             <p className="text-sm text-gray-300 mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
           </div>
           

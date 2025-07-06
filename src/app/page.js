@@ -12,6 +12,9 @@ export default function Home() {
             >
               سجل الآن
             </Link>
+            <p className="text-center mt-4">
+              يمكنك التسجيل في الأسهم المالية من خلال كتابة الاسم ، الايميل ، ورقم الواتساب.
+            </p>
           </section>
       </div>
     </Layout>
