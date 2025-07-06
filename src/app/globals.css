@@ -9,40 +9,33 @@ body {
   font-family: 'Almarai', Arial, Helvetica, sans-serif;
 }
 
-/* تعريفات الرسوم المتحركة */
-@keyframes blob {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  33% {
-    transform: translate(30px, -50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
+
+/* تأثيرات هوفر عامة للأزرار والكروت */
+.button-primary, .btn-primary, .bg-gradient-to-r, .hoverable, button {
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.button-primary:hover, .btn-primary:hover, .bg-gradient-to-r:hover, .hoverable:hover, button:hover {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff !important;
+  box-shadow: 0 8px 32px 0 rgba(0,184,137,0.12), 0 1.5px 6px 0 var(--primary-color);
+  transform: translateY(-3px);
 }
 
-.animate-blob {
-  animation: blob 7s infinite;
+/* هوفر خاص للكروت */
+.card-hover, .shadow-lg, .shadow-xl {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.card-hover:hover, .shadow-lg:hover {
+  box-shadow: 0 12px 40px 0 rgba(0,120,255,0.13), 0 2px 8px 0 var(--secondary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-4px) scale(1.03);
 }
 
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-/* تأثيرات إضافية */
-.hover-lift {
-  transition: transform 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-5px);
+/* هوفر خاص لعناصر الخيارات الجانبية */
+.option-hover:hover, .option-hover:focus {
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  color: #fff !important;
+  border-right: 4px solid var(--secondary-color) !important;
+  box-shadow: 0 4px 16px 0 rgba(0,120,255,0.08);
 }
 

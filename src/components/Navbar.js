@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20">
           <div className="flex">
             <Link href='/' className={`flex-shrink-0 flex items-center transition-all duration-700 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <span className="text-white text-xl font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text">أسهم المالية</span>
+              <span className="text-white text-xl font-bold ">أسهم المالية</span>
             </Link>
           </div>
         </div>
