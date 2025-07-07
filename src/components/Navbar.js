@@ -26,12 +26,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-transparent shadow-md sticky top-0 z-50" dir="rtl">
+    <nav className="bg-white shadow-md fixed w-full top-0 z-50" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex">
             <Link href='/' className={`flex-shrink-0 flex items-center transition-all duration-700 ${mounted ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-              <span className="text-white text-xl font-bold ">أسهم المالية</span>
+              <span className="text-xl font-bold ">أسهم المالية</span>
             </Link>
           </div>
         </div>

@@ -99,6 +99,11 @@ export default function Form() {
     return Object.keys(newErrors).length === 0;
   };
 
+  const whatsappRedirect = () => {
+    alert(" شكراً، تم استلام بياناتك وسنتواصل معك قريباً...");
+    window.location.href = "https://wa.me/966563793970?text=مرحباً،%20أنا%20مهتم%20بالخدمة%20وأريد%20معرفة%20التفاصيل";
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -121,6 +126,8 @@ export default function Form() {
             whatsapp: '',
             country: ''
           });
+          whatsappRedirect();
+          return;
         } else {
           throw new Error('فشل في إرسال البيانات');
         }

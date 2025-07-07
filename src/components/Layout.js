@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
       
       <div className={`relative min-h-screen flex flex-col transition-opacity duration-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow mt-20">{children}</main>
         <Footer />
         <WhatsAppButton />
       </div>

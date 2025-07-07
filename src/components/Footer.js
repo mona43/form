@@ -17,8 +17,12 @@ const Footer = () => {
     <footer className={`bg-black/30 backdrop-blur-sm text-white py-6 transition-all duration-1000 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
+          <div className="mb-4 md:mb-0 ">
+            <div className="flex">
+              <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
+              <Link href='/terms' className="text-lg mx-4 font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">الشروط والأحكام</Link>
+              <Link href='/privacy' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">سياسة الخصوصية</Link>
+            </div>
             <p className="text-sm text-gray-300 mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
           </div>
           

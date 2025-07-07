@@ -18,7 +18,6 @@ body {
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   color: #fff !important;
   box-shadow: 0 8px 32px 0 rgba(0,184,137,0.12), 0 1.5px 6px 0 var(--primary-color);
-  transform: translateY(-3px);
 }
 
 /* هوفر خاص للكروت */
