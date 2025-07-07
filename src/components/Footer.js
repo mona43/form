@@ -16,17 +16,16 @@ const Footer = () => {
   return (
     <footer className={`bg-black/30 backdrop-blur-sm text-white py-6 transition-all duration-1000 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0 ">
-            <div className="flex">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0 text-center md:text-right">
+          <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2 sm:gap-4">
               <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
-              <Link href='/terms' className="text-lg mx-4 font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">الشروط والأحكام</Link>
+              <Link href='/terms' className="text-lg sm:mx-4 font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">الشروط والأحكام</Link>
               <Link href='/privacy' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">سياسة الخصوصية</Link>
             </div>
-            <p className="text-sm text-gray-300 mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
+            <p className="text-sm text-gray-300 mt-2 md:mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
           </div>
-          
-          <div className="flex space-x-6">
+          <div className="flex justify-center md:justify-end gap-4 w-full md:w-auto">
             <a href="#" className="hover-lift hover:text-[var(--primary-color)] transition-colors duration-300">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.73 1.04 4.28 4.28 0 00-7.29 3.9A12.13 12.13 0 013 4.79a4.28 4.28 0 001.32 5.71 4.27 4.27 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.19 4.28 4.28 0 01-1.93.07 4.28 4.28 0 004 2.97A8.59 8.59 0 012 19.54a12.12 12.12 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2v-.56a8.68 8.68 0 002.14-2.22z" />

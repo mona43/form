@@ -3,10 +3,10 @@ import Layout from '../../components/Layout';
 export default function PrivacyPage() {
   return (
     <Layout>
-      <div className="relative flex flex-col items-center justify-center p-8">
-        <section className="my-12 p-10 rounded-xl border border-gray-100 text-white backdrop-blur-sm bg-white/5 shadow-xl max-w-7xl w-full">
-          <h2 className="text-3xl font-bold text-center mb-6 inline-block bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-transparent bg-clip-text">سياسة الخصوصية</h2>
-          <div className="text-white rounded-xl shadow p-8 leading-relaxed">
+      <div className="relative flex flex-col items-center justify-center p-4 sm:p-8">
+        <section className="my-8 sm:my-12 p-4 sm:p-10 rounded-xl border border-gray-100 text-white backdrop-blur-sm bg-white/5 shadow-xl max-w-7xl w-full">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 inline-block bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] text-transparent bg-clip-text">سياسة الخصوصية</h2>
+          <div className="text-white rounded-xl shadow p-4 sm:p-8 leading-relaxed text-right text-base sm:text-lg">
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2"><svg className="w-6 h-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5.25-3.5 9.75-8 11-4.5-1.25-8-5.75-8-11V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>بيان الخصوصية</h2>
             <p className="mb-4">نحن ملتزمون بحماية خصوصيتك والحفاظ على سرية معلوماتك الشخصية والمالية. يوضح بيان الخصوصية التالي كيفية جمعنا لمعلوماتك واستخدامها وحمايتها. باستخدامك لموقعنا الإلكتروني أو بفتح حساب معنا، فإنك توافق على ممارسات جمع واستخدام المعلومات كما هو موضح في هذا البيان.</p>
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2"><svg className="w-6 h-6 text-[var(--primary-color)]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M3 7l9 6 9-6"/></svg>جمع المعلومات الشخصية</h2>
