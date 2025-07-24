@@ -19,9 +19,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0 text-center md:text-right">
           <div className="mb-4 md:mb-0 flex flex-col items-center md:items-start w-full md:w-auto">
             <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-2 sm:gap-4">
-              <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
-              <Link href='/terms' className="text-lg sm:mx-4 font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">الشروط والأحكام</Link>
-              <Link href='/privacy' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">سياسة الخصوصية</Link>
+              <Link href='/form' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link>
+              {/* <Link href='/about' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">من نحن</Link> */}
+              {/* <Link href='/terms' className="text-lg sm:mx-4 font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">الشروط والأحكام</Link> */}
+              {/* <Link href='/privacy' className="text-lg font-bold bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">سياسة الخصوصية</Link> */}
             </div>
             <p className="text-sm text-gray-300 mt-2 md:mt-1">© {new Date().getFullYear()} جميع الحقوق محفوظة</p>
           </div>

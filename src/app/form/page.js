@@ -264,11 +264,11 @@ export default function Form() {
               </form>
             )}
             
-            <div className="mt-8 text-center">
+            {/* <div className="mt-8 text-center">
               <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium text-lg transition-colors">
                 ← العودة للصفحة الرئيسية
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
